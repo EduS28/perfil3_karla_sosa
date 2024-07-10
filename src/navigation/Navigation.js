@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 
 import Home from '../screens/Home';
 import Add from '../screens/Add';
+import Register from '../screens/Register';
 
 const Stack = createNativeStackNavigator();
 
@@ -10,6 +11,7 @@ const Navigation = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator>
+            <Stack.Screen name="Register" component={Register} options={{title: 'Registrar'}} />
                 <Stack.Screen name="Home" component={Home} options={{title:'Home'}} />
                 <Stack.Screen name="Add" component={Add} 
                 options={{presentation:'modal', title:'Agregar productos'}}/>
