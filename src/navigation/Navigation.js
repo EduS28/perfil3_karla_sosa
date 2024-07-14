@@ -12,9 +12,6 @@ const Navigation = () => {
         <NavigationContainer>
             <Stack.Navigator>
             <Stack.Screen name="Register" component={Register} options={{title: 'Registrar'}} />
-                <Stack.Screen name="Home" component={Home} options={{title:'Home'}} />
-                <Stack.Screen name="Add" component={Add} 
-                options={{presentation:'modal', title:'Agregar productos'}}/>
             </Stack.Navigator>
         </NavigationContainer>
     );
